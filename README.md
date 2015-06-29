@@ -1,7 +1,7 @@
 # [Eth(Embedded)](http://www.ethembedded.com) [Beaglebone Black](http://beagleboard.org/BLACK)/[Ethereum](https://www.ethereum.org/) Install Instructions
 
 ### Supported Boards:
-  BeagleBone Black
+	BeagleBone Black
 
 ### Materials Needed:
 - Beaglebone Black development board
