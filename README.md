@@ -19,18 +19,18 @@
 ### Installation Method 
 ###### *Disclaimer* - If you will be formatting an SD card be aware that you will be deleting all information stored on said card.  Eth(Embedded) is *NOT*  responsible for any data loss that may occur during the format process.
 
-1. We start with a fresh install of Ubuntu 14.04 from [armhf.com](http://www.armhf.com/boards/beaglebone-black/bbb-sd-install/) using `dd` on your linux PC or Laptop.
-2. 
-
-3. Power on your BBB... 
-4. Once ua-netinst is complete, we need to log in to our router and look at the dhcp client list to find the IP address assigned to our device, alternately you can use one of my favorite mobile apps, [FING](https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=en), as long as your android phone is connected to the same network. We can then, using a linux cli or [putty](http://www.putty.org/), ssh[(instructions)](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-6-using-ssh/using-ssh-on-a-mac-or-linux) into the device with the following *default* credentials:
-5. At this point, we need to change the `ubuntu` users passwords 
-
-- login : `ubuntu`
+1. Insert your FAT32 formatted SD card into your linux PC or Laptop. Next lets install Ubuntu 14.04 following the instructions from [armhf.com](http://www.armhf.com/boards/beaglebone-black/bbb-sd-install/) 
+2. Once you have completed the instructions from www.armhf.com, safely remove and install SD card into a powered down BeagleBone Black) with ethernet cable connected between BBB and an internet enabled DHCP router.
+3. Power on your BBB.
+4. Once the boot process is complete, we need to log in to our router and look at the dhcp client list to find the IP address assigned to our BBB device, alternately you can use one of my favorite mobile apps, [FING](https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=en), as long as your android phone is connected to the same network. We can then, using a linux cli or [putty](http://www.putty.org/), ssh[(instructions)](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-6-using-ssh/using-ssh-on-a-mac-or-linux) into the device with the following *default* credentials:
+5. - login : `ubuntu`
 - password: `ubuntu`
-- at the command prompt: `passwd` follow on screen instructions...
 
-6. Log in as the `ubuntu` user to download, unzip, and choose eth-install.sh OR geth-install.sh:
+6. At this point, before we move forward, lets take the opportunity to change the `ubuntu` users password: 
+
+- at the command prompt type: `passwd` and follow on screen instructions...
+
+6. Next lets download, unzip, and choose eth-install.sh OR geth-install.sh:
 
 	`wget https://github.com/EthEmbedded/`
 
