@@ -24,12 +24,12 @@
 3. Power on your BBB.
 4. While the BBB is booting, we need to log in to our router and look at the dhcp client list to find the IP address assigned to our BBB device, alternately you can use one of my favorite mobile apps, [FING](https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=en), as long as your android phone is connected to the same network. We can then, using a linux cli or [putty](http://www.putty.org/), ssh[(instructions)](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-6-using-ssh/using-ssh-on-a-mac-or-linux) into the device with the following *default* credentials:
 
-- login : `ubuntu`
-- password: `ubuntu`
+	- login : `ubuntu`
+	- password: `ubuntu`
 
 5. At this point lets take the opportunity to change the `ubuntu` users password: 
 
-- `passwd` and follow on screen instructions...
+	- `passwd` and follow on screen instructions...
 
 6. Next lets download, unzip, and choose eth-install.sh OR geth-install.sh:
 
