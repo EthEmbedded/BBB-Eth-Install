@@ -19,10 +19,10 @@
 ### Installation Method 
 ###### *Disclaimer* - If you will be formatting an SD card be aware that you will be deleting all information stored on said card.  Eth(Embedded) is *NOT*  responsible for any data loss that may occur during the format process.
 
-1. Insert your FAT32 formatted SD card into your linux PC or Laptop. Next lets install Ubuntu 14.04 following the instructions from [armhf.com](http://www.armhf.com/boards/beaglebone-black/bbb-sd-install/) 
-2. Once you have completed the instructions from www.armhf.com, safely remove and install SD card into a powered down BeagleBone Black) with ethernet cable connected between BBB and an internet enabled DHCP router.
+1. Insert your FAT32 formatted SD card into your linux PC or Laptop. Next we will install Ubuntu 14.04 following the instructions from http://www.armhf.com/boards/beaglebone-black/bbb-sd-install/
+2. Once you have completed the instructions from www.armhf.com, safely remove and install SD card into a powered down BeagleBone Black with ethernet cable connected between BBB and an internet enabled DHCP router.
 3. Power on your BBB.
-4. Once the boot process is complete, we need to log in to our router and look at the dhcp client list to find the IP address assigned to our BBB device, alternately you can use one of my favorite mobile apps, [FING](https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=en), as long as your android phone is connected to the same network. We can then, using a linux cli or [putty](http://www.putty.org/), ssh[(instructions)](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-6-using-ssh/using-ssh-on-a-mac-or-linux) into the device with the following *default* credentials:
+4. While the BBB is booting, we need to log in to our router and look at the dhcp client list to find the IP address assigned to our BBB device, alternately you can use one of my favorite mobile apps, [FING](https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=en), as long as your android phone is connected to the same network. We can then, using a linux cli or [putty](http://www.putty.org/), ssh[(instructions)](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-6-using-ssh/using-ssh-on-a-mac-or-linux) into the device with the following *default* credentials:
 5. - login : `ubuntu`
 - password: `ubuntu`
 
