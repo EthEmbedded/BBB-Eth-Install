@@ -29,7 +29,7 @@
 
 5. At this point lets take the opportunity to change the `ubuntu` users password: 
 
-	- `passwd` and follow on screen instructions...
+	`passwd` and follow on screen instructions...
 
 6. Next lets download, unzip, and choose eth-install.sh OR geth-install.sh:
 
