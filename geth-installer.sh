@@ -7,27 +7,19 @@ sudo apt-get -y update
 echo -e "\e[34mPerforming Housekeeping - Upgrade...\e[0m"
 sudo apt-get -y upgrade
 echo -e "\e[34mInstalling Dependencies...\e[0m"
-sudo apt-get -y install nano screen dphys-swapfile build-essential libgmp3-dev golang git
+sudo apt-get -y install nano screen dphys-swapfile build-essential libgmp3-dev git
 
 #Install GO 1.4.2
 echo -e "\e[34mInstalling GO 1.4.2 from source...\e[0m"
 
-#Set environment variables:
-
-cd ~
-export PATH=$HOME/golang/bin:$PATH
-export GOPATH=$HOME/go
-mkdir -p $GOPATH
-
 #Install golang from source:
 
-cd ~
-git clone https://go.googlesource.com/go golang
-cd golang
-git checkout go1.4.2
+cd /usr/local/bin
+sudo git clone https://go.googlesource.com/go golang
+cd go
+sudo git checkout go1.4.2
 cd src
 sudo ./make.bash
-export PATH=$HOME/golang/bin:$PATH
 
 #Install go-ethereum OR `geth`
 echo -e "\e[34mInstalling go-ethereum...\e[0m"
