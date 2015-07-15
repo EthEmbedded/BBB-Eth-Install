@@ -12,11 +12,18 @@ sudo apt-get -y install nano screen dphys-swapfile build-essential libgmp3-dev g
 #Install GO 1.4.2
 echo -e "\e[34mInstalling GO 1.4.2 from source...\e[0m"
 
+#Set environment variables:
+
+cd ~
+export PATH=$HOME/golang/bin:$PATH
+export GOPATH=$HOME/go
+mkdir -p $GOPATH
+
 #Install golang from source:
 
-cd /usr/local/bin
+cd ~
 sudo git clone https://go.googlesource.com/go golang
-cd go
+cd golang
 sudo git checkout go1.4.2
 cd src
 sudo ./make.bash
