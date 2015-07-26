@@ -21,13 +21,13 @@
 
 1. Insert your FAT32 formatted SD card into your linux PC or Laptop. Next we will install Debian Wheezy following the instructions from http://www.armhf.com/boards/beaglebone-black/bbb-sd-install/
 
-***IMPORTANT*** Ensure that when you get to "STEP#5" of the armhf instructions you ***REPLACE*** 
+	***IMPORTANT*** Ensure that when you get to "STEP#5" of the armhf instructions you ***REPLACE*** 
 
--`wget http://s3.armhf.com/dist/bone/ubuntu-trusty-14.04-rootfs-3.14.4.1-bone-armhf.com.tar.xz` 
+	-`wget http://s3.armhf.com/dist/bone/ubuntu-trusty-14.04-rootfs-3.14.4.1-bone-armhf.com.tar.xz` 
 
 	with 
 
--`wget http://s3.armhf.com/dist/bone/debian-wheezy-7.5-rootfs-3.14.4.1-bone-armhf.com.tar.xz` 
+	-`wget http://s3.armhf.com/dist/bone/debian-wheezy-7.5-rootfs-3.14.4.1-bone-armhf.com.tar.xz` 
 
 2. Once you have completed the instructions from www.armhf.com, safely remove and install SD card into a powered down BeagleBone Black with ethernet cable connected between BBB and an internet enabled DHCP router.
 3. Power on your BBB.
