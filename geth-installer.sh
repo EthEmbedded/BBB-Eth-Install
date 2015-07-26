@@ -1,32 +1,18 @@
 #!/bin/bash
 
-#First we need to perform some housekeeping & install dependencies
-echo -e "\e[32mFirst we need to perform some housekeeping & install dependencies\e[0m"
+#Upgrade Debian to "stretch"
+echo -e "\e[32mFirst we need to upgrade debian to testing or stretch so we can install latest dependencies\e[0m"
+sudo sed -i /deb/s/wheezy/stretch/g /etc/apt/sources.list
 echo -e "\e[34mPerforming Housekeeping - Update...\e[0m"
 sudo apt-get -y update
 echo -e "\e[34mPerforming Housekeeping - Upgrade...\e[0m"
 sudo apt-get -y upgrade
+echo -e "\e[34mPerforming Debian Upgrade from `Jessie` to `Stretch`...\e[0m"
+sudo apt-get -y dist-upgrade 
+
+#Install dependencies
 echo -e "\e[34mInstalling Dependencies...\e[0m"
-sudo apt-get -y install nano screen dphys-swapfile build-essential libgmp3-dev git
-
-#Install GO 1.4.2
-echo -e "\e[34mInstalling GO 1.4.2 from source...\e[0m"
-
-#Set environment variables:
-
-cd ~
-export PATH=$HOME/golang/bin:$PATH
-export GOPATH=$HOME/go
-mkdir -p $GOPATH
-
-#Install golang from source:
-
-cd ~
-sudo git clone https://go.googlesource.com/go golang
-cd golang
-sudo git checkout go1.4.2
-cd src
-sudo ./make.bash
+sudo apt-get -y install dphys-swapfile build-essential libgmp3-dev golang git 
 
 #Install go-ethereum OR `geth`
 echo -e "\e[34mInstalling go-ethereum...\e[0m"
