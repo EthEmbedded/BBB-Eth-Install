@@ -23,11 +23,11 @@
 
 ***IMPORTANT*** Ensure that when you get to "STEP#5" of the armhf instructions you ***REPLACE*** 
 
-`wget http://s3.armhf.com/dist/bone/ubuntu-trusty-14.04-rootfs-3.14.4.1-bone-armhf.com.tar.xz` 
+-`wget http://s3.armhf.com/dist/bone/ubuntu-trusty-14.04-rootfs-3.14.4.1-bone-armhf.com.tar.xz` 
 
-with 
+	with 
 
-`wget http://s3.armhf.com/dist/bone/debian-wheezy-7.5-rootfs-3.14.4.1-bone-armhf.com.tar.xz` 
+-`wget http://s3.armhf.com/dist/bone/debian-wheezy-7.5-rootfs-3.14.4.1-bone-armhf.com.tar.xz` 
 
 2. Once you have completed the instructions from www.armhf.com, safely remove and install SD card into a powered down BeagleBone Black with ethernet cable connected between BBB and an internet enabled DHCP router.
 3. Power on your BBB.
