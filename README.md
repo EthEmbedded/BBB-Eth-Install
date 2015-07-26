@@ -19,23 +19,24 @@
 ### Installation Method 
 ###### *Disclaimer* - If you will be formatting an SD card be aware that you will be deleting all information stored on said card.  Eth(Embedded) is *NOT*  responsible for any data loss that may occur during the format process.
 
-1. Insert your FAT32 formatted SD card into your linux PC or Laptop. Next we will install Ubuntu 14.04 following the instructions from http://www.armhf.com/boards/beaglebone-black/bbb-sd-install/
-2. Once you have completed the instructions from www.armhf.com, safely remove and install SD card into a powered down BeagleBone Black with ethernet cable connected between BBB and an internet enabled DHCP router.
-3. Power on your BBB.
-4. While the BBB is booting, we need to log in to our router and look at the dhcp client list to find the IP address assigned to our BBB device, alternately you can use one of my favorite mobile apps, [FING](https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=en), as long as your android phone is connected to the same network. We can then, using a linux cli or [putty](http://www.putty.org/), ssh[(instructions)](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-6-using-ssh/using-ssh-on-a-mac-or-linux) into the device with the following *default* credentials:
+1. Insert your FAT32 formatted SD card into your linux PC or Laptop. Next we will install Debian Wheezy following the instructions from http://www.armhf.com/boards/beaglebone-black/bbb-sd-install/
+2. ***IMPORTANT*** Ensure that when you get to "STEP#5" of the armhf instructions you replace `wget http://s3.armhf.com/dist/bone/ubuntu-trusty-14.04-rootfs-3.14.4.1-bone-armhf.com.tar.xz` with `wget http://s3.armhf.com/dist/bone/debian-wheezy-7.5-rootfs-3.14.4.1-bone-armhf.com.tar.xz` 
+3. Once you have completed the instructions from www.armhf.com, safely remove and install SD card into a powered down BeagleBone Black with ethernet cable connected between BBB and an internet enabled DHCP router.
+4. Power on your BBB.
+5. While the BBB is booting, we need to log in to our router and look at the dhcp client list to find the IP address assigned to our BBB device, alternately you can use one of my favorite mobile apps, [FING](https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=en), as long as your android phone is connected to the same network. We can then, using a linux cli or [putty](http://www.putty.org/), ssh[(instructions)](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-6-using-ssh/using-ssh-on-a-mac-or-linux) into the device with the following *default* credentials:
 
-	- login : `ubuntu`
-	- password: `ubuntu`
+	- login : `debian`
+	- password: `debian`
 
-5. At this point lets take the opportunity to change the `ubuntu` users password: 
+6. At this point lets take the opportunity to change the `debian` users password: 
 
 	`passwd` and follow on screen instructions...
 
 6. Next lets download, unzip, and choose eth-install.sh OR geth-install.sh:
 
-	`wget https://github.com/EthEmbedded/BBB-Eth-Install/archive/v0.1.8.tar.gz`
+	`wget https://github.com/EthEmbedded/BBB-Eth-Install/archive/v0.1.9.tar.gz`
 
-	`tar -xvzf v0.1.7.tar.gz`
+	`tar -xvzf v0.1.9.tar.gz`
 	
 	`cd BBB-Eth-Install`
 
