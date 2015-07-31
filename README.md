@@ -40,23 +40,23 @@
 
 	`passwd` and follow on screen instructions...
 
-6. Next lets download, unzip, and choose eth-install.sh OR geth-install.sh:
+6. Next lets download, unzip, and choose eth-installer.sh OR geth-installer.sh:
 
-	`wget https://github.com/EthEmbedded/BBB-Eth-Install/archive/v0.1.9.tar.gz`
+	`wget https://github.com/EthEmbedded/BBB-Eth-Install/archive/v0.2.0.tar.gz`
 
-	`tar -xvzf v0.1.9.tar.gz`
+	`tar -xvzf v0.2.0.tar.gz`
 	
 	`cd BBB-Eth-Install`
 
-	`sudo chmod +x geth-install.sh` OR `sudo chmod +x eth-install.sh` 
+	`sudo chmod +x geth-installer.sh` OR `sudo chmod +x eth-installer.sh` 
 	
 7. Now lets run the install script for either `geth` or `eth`
 
-	`./geth-install.sh`
+	`./geth-installer.sh`
 	
 	OR
 	
-	`./eth-install.sh`
+	`./eth-installer.sh`
 	
 	***NOTE*** - If a window pops up requesting you to restart services during the process, feel free to select yes.
 	
