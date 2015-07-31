@@ -7,7 +7,7 @@ echo -e "\e[34mPerforming Housekeeping - Update...\e[0m"
 sudo apt-get -y update
 echo -e "\e[34mPerforming Housekeeping - Upgrade...\e[0m"
 sudo apt-get -y upgrade
-echo -e "\e[34mPerforming Debian Upgrade from `Jessie` to `Stretch`...\e[0m"
+echo -e "\e[34mPerforming Debian Upgrade from Wheezy to Stretch...\e[0m"
 sudo apt-get -y dist-upgrade 
 
 #Install dependencies
