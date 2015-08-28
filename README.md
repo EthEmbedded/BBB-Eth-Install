@@ -42,9 +42,9 @@
 
 6. Next lets download, unzip, and choose eth-installer.sh OR geth-installer.sh:
 
-	`wget https://github.com/EthEmbedded/BBB-Eth-Install/archive/v0.2.0.tar.gz`
+	`wget https://github.com/EthEmbedded/BBB-Eth-Install/archive/v0.3.2.tar.gz`
 
-	`tar -xvzf v0.2.0.tar.gz`
+	`tar -xvzf v0.3.2.tar.gz`
 	
 	`cd BBB-Eth-Install`
 
