@@ -46,7 +46,7 @@
 
 	`tar -xvzf v0.3.2.tar.gz`
 	
-	`cd BBB-Eth-Install`
+	`cd BBB-Eth-Install-0.3.2`
 
 	`sudo chmod +x geth-installer.sh` OR `sudo chmod +x eth-installer.sh` 
 	
