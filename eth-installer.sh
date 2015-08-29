@@ -1,8 +1,16 @@
 #!/bin/bash
 
-#First we need to perform some housekeeping & install dependencies
+#Upgrade Debian to "stretch"
+echo -e "\e[32mFirst we need to edit our sources.list to set stretch/testing as our source so we can install latest versions of dependencies\e[0m"
+sudo sed -i /deb/s/wheezy/stretch/g /etc/apt/sources.list
+echo -e "\e[34mPerforming Housekeeping - Update...\e[0m"
 sudo apt-get -y update
+echo -e "\e[34mPerforming Housekeeping - Upgrade...\e[0m"
 sudo apt-get -y upgrade
+echo -e "\e[34mPerforming Debian Upgrade from Wheezy to Stretch...\e[0m"
+sudo apt-get -y dist-upgrade 
+
+#First we need to perform some housekeeping & install dependencies
 sudo apt-get -y install nano screen dphys-swapfile build-essential git python curl scons cmake libboost-all-dev automake unzip libgmp-dev libgmp3-dev libtool libleveldb-dev yasm libminiupnpc-dev libreadline-dev libncurses5-dev libcurl4-openssl-dev wget libjsoncpp-dev libargtable2-dev libmicrohttpd-dev libedit-dev mesa-common-dev ocl-icd-libopencl1 opencl-headers libgoogle-perftools-dev ocl-icd-dev libv8-dev binfmt-support libffi-dev libobjc-4.9-dev libobjc4
 
 #Download armhf pre-compiled llvm-3.8 
