@@ -82,7 +82,7 @@ For eth/cpp-ethereum visit: https://github.com/ethereum/cpp-ethereum/wiki/Using-
 
 ####For more information regarding the BeagleBone Black visit:
 
-Main Homepage: http://www.beagleboard.com/Black
+Main Homepage: http://www.beagleboard.org/Black
 
 Additional info: http://eewiki.net/display/linuxonarm/BeagleBone+Black
 
